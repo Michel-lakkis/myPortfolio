@@ -6,6 +6,10 @@
 navbar {
     background-color: white;
 }
+.logo {
+    border-radius: 50%;
+    height: 40px;
+}
 .nav-link {
     color: black;
     font-size: 1rem;
@@ -26,10 +30,11 @@ navbar {
 }
 /* main section */
 .main {
-    background: url(./) no-repeat;
-    background-size: cover;
+    background: url(./Hero.jpg) no-repeat;
+    background-size:cover;
     width: 100%;
-    height: 95vh;
+    height: 100vh;
+    color: white;
 }
 
 .main h3 {
@@ -40,35 +45,344 @@ navbar {
     font-size: 1.4rem;
     text-transform: uppercase;
     line-height: 1;
-    border-bottom: 3px solid rgb(233, 20, 109);
+    border-bottom: 3px solid  rgb(179, 44, 206);
     width: 55%;
 }
 .main .bt1 {
     height: 55px;
     width: 138px;
-    background-color: rgb(233, 20, 109);
-    color: white;
+    background-color: rgb(179, 44, 206);
+    color: rgb(234, 242, 239);
     outline: none;
     border: none;
     font-weight: bold;
     border-radius: 5px;
 }
 .main .bt1:hover{
-    background-color: rgb(202, 18, 95);
+    background-color: rgb(217, 114, 255);
     transition: 0.5s;
 }
 .main .bt2 {
     height: 55px;
     width: 138px;
     background-color: transparent;
-    color: rgb(233, 20, 109);
+    color: rgb(179, 44, 206);
     outline: none;
-    border: 1px solid rgb(233, 20, 109);
+    border: 1px solid rgb(179, 44, 206);
     font-weight: bold;
     border-radius: 5px;
 }
 .main .bt2:hover{
-    background-color: rgb(233, 20, 109);
-    color: white;
+    background-color: rgb(179, 44, 206);
+    color: rgb(234, 242, 239);
     transition: 0.5s;
+}
+h1 {
+    font-size: 3rem;
+    font-weight: 900;
+}
+.progress {
+    background-color: rgb(234, 242, 239);
+    justify-content: flex-start;
+    border-radius: 50px;
+    align-items: center;
+    position: relative;
+    display: flex;
+    height: 25px;
+    width: 100%;
+
+}
+.pro-value1 {
+    animation: load1 3s normal forwards;
+    border-radius: 50px ;
+    background-color: rgb(117, 70, 104);
+    height: 25px;
+    width: 0;
+    animation-timing-function: ease-in-out;
+}
+.pro-value2 {
+    animation: load2 3s normal forwards;
+    border-radius: 50px ;
+    background-color: rgb(117, 70, 104);
+    height: 25px;
+    width: 0;
+    animation-timing-function: ease-in-out;
+}
+.pro-value3 {
+    animation: load3 3s normal forwards;
+    border-radius: 50px ;
+    background-color: rgb(117, 70, 104);
+    height: 25px;
+    width: 0;
+    animation-timing-function: ease-in-out;
+}
+.pro-value4 {
+    animation: load4 3s normal forwards;
+    border-radius: 50px ;
+    background-color: rgb(117, 70, 104);
+    height: 25px;
+    width: 0;
+    animation-timing-function: ease-in-out;
+}
+.progress p{
+    color: rgb(234, 242, 239);
+    padding: 5px;
+}
+@keyframes load1 {
+    0%{
+        width: 0;
+        background-color: rgb(217, 114, 255);
+    }
+    100%{
+        width: 82%;
+        background-color: rgb(117, 70, 104);
+    }
+}
+@keyframes load2 {
+    0%{
+        width: 0;
+        background-color: rgb(217, 114, 255);
+    }
+    100%{
+        width: 77%;
+        background-color: rgb(117, 70, 104);
+    }
+}
+@keyframes load3 {
+    0%{
+        width: 0;
+        background-color: rgb(217, 114, 255);
+    }
+    100%{
+        width: 92%;
+        background-color: rgb(117, 70, 104);
+    }
+}
+@keyframes load4 {
+    0%{
+        width: 0;
+        background-color: rgb(217, 114, 255);
+    }
+    100%{
+        width: 92%;
+        background-color: rgb(117, 70, 104);
+    }
+}
+.btn1 {
+    height: 40px;
+    width: 145px;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(117, 70, 104);
+    color: white;
+
+}
+.btn1:hover{
+    background-color: transparent;
+    color: rgb(117, 70, 104);
+    border: 1px solid rgb(117, 70, 104);
+    transition: 0.5s;
+}
+.btn2 {
+    height: 40px;
+    width: 145px;
+    outline: none;
+    border: 1px solid rgb(117, 70, 104);
+    border-radius: 4px;
+    background-color: transparent;
+    color: rgb(117, 70, 104);
+
+}
+.btn2:hover{
+    background-color:rgb(117, 70, 104);
+    color: white;
+    border:none;
+    transition: 0.5s;
+}
+.card {
+    border: none;
+    outline: none;
+    -webkit-box-shadow: -8px 6px 90px -66px rgba(0,0,0,0.75);
+-moz-box-shadow: -8px 6px 90px -66px rgba(0,0,0,0.75);
+box-shadow: -8px 6px 90px -66px rgba(0,0,0,0.75);
+}
+.card p{
+    color: gray;
+}
+.circle {
+    height: 70px;
+    width: 70px;
+    background-color: rgb(117, 70, 104);
+    color: black;
+    padding: 12px;
+    display: inline-block;
+    margin-bottom: 20px;
+    font-size: 30px;
+    border-radius: 50%;
+}
+.card:hover {
+    -webkit-box-shadow: 0px 0px 103px 23px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 103px 23px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 103px 23px rgba(0,0,0,0.75);
+transition: 0.5s;
+z-index: 10;
+}
+.card:hover .circle {
+    background-color:rgb(217, 114, 255) ;
+    color: white;
+    
+    transition: 0.5s;
+}
+i {
+    color: black;
+}
+.btn-container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  align-items: center;
+  }
+  
+  .bt3, .bt4 {
+    margin-top: 0;
+    background-color: rgb(117, 70, 104);
+    color: rgb(234, 242, 239);
+    outline: none;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.bt3:hover, .bt4:hover{
+    background-color: rgb(217, 114, 255);
+    transition: 0.5s;
+}
+.contact .Btn {
+    background-color: rgb(117, 70, 104);
+    color: white;
+    outline: none;
+    border: none;
+    height: 40px;
+    width: 140px;
+    border-radius: 4px;
+}
+.Btn:hover {
+    background-color: transparent;
+    color: rgb(117, 70, 104);
+    border: 1px solid rgb(117, 70, 104);
+    transition: 0.4s;
+}
+footer{
+    background-color: rgb(58, 52, 52);
+    color:lightgray;
+}
+
+
+/* Default Light Mode Styles */
+body {
+    background-color: white;
+    color: black;
+  }
+  
+  .navbar {
+    background-color: white;
+  }
+  
+  .nav-link {
+    color: black;
+  }
+  
+  /* Dark Mode Styles */
+  body.dark-mode {
+    background-color: #121212;
+    color: white;
+  }
+  
+  body.dark-mode .navbar {
+    background-color: #333;
+  }
+  
+  body.dark-mode .nav-link {
+    color: white;
+  }
+  
+  body.dark-mode .nav-link:hover {
+    color: #f1f1f1;
+    background-color: #444;
+  }
+  
+  body.dark-mode .navbar-brand {
+    color: white;
+  }
+  
+  /* Optional: Add additional dark mode styles for buttons, text, etc. */
+  body.dark-mode .btn1,
+  body.dark-mode .btn2,
+  body.dark-mode .bt1,
+  body.dark-mode .bt2,
+  body.dark-mode .bt3,
+  body.dark-mode .bt4 {
+    background-color: #444;
+    color: white;
+  }
+  
+  body.dark-mode .card {
+    background-color: #222;
+    color: white;
+  }
+  
+  body.dark-mode footer {
+    background-color: #333;
+    color: lightgray;
+  }
+  
+  /* Theme switch button styles */
+  .theme-switch input {
+    display: none;
+  }
+  
+  .theme-switch .switch-label {
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    width: 34px;
+    height: 20px;
+  }
+  
+  .theme-switch .switch-label:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    border-radius: 50px;
+    transition: background-color 0.3s;
+  }
+  
+  .theme-switch input:checked + .switch-label:before {
+    background-color: #4CAF50;
+  }
+  
+  .theme-switch .switch-label:after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 16px;
+    height: 16px;
+    background-color: white;
+    border-radius: 50%;
+    transition: transform 0.3s;
+  }
+  
+  .theme-switch input:checked + .switch-label:after {
+    transform: translateX(14px);
+  }
+  .stays-black {
+    color: black;
+  }
+  body.dark-mode nav a {
+    color: white !important;
 }
